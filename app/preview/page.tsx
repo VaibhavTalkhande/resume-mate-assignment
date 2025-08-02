@@ -54,11 +54,9 @@ export default function PreviewPage() {
               <span className="font-bold text-gray-800 text-sm sm:text-base">Position:</span>
               <span className="text-gray-700 text-sm sm:text-base break-words">{data.position || '-'}</span>
             </div>
-            <div className="space-y-2">
-              <span className="font-bold text-gray-800 text-sm sm:text-base block">Description:</span>
-              <p className="text-gray-700 text-sm leading-relaxed break-words">
-                {data.description || '-'}
-              </p>
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+              <span className="font-bold text-gray-800 text-sm sm:text-base">Description:</span>
+              <span className="text-gray-700 text-sm sm:text-base break-words">{data.description || '-'}</span>
             </div>
           </div>
         </div>
